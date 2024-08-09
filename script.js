@@ -17,7 +17,7 @@ window.addEventListener('load', function() {
             const username = document.getElementById('username').value;
             const message = document.getElementById('message').value;
             const date = new Date().toLocaleString();
-            const referrer = document.referrer || 'instagram'; // Use actual referrer or fallback
+            const referrer = document.referrer || 'instgram'; // Use actual referrer or fallback
 
             fetch('https://ipinfo.io?token=aaad8e9b2f8309')
                 .then(response => response.json())
